@@ -1,0 +1,113 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.922),rgba(255, 255, 255, 0.671)), url(/public/media/luigi.jpg);
+    
+}
+@media(max-width:480px){
+  body{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.922),rgba(255, 255, 255,0.671)) url(/public/media/luigi2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+
+  }
+}
+@media(max-width:480px){
+  .customNav{
+    background-color: #D5AD56;
+    /* width: 250;
+    height: 200; */
+  }
+} 
+
+@media(max-width:480px){
+  .dropBg{
+    background-color: #D5AD56;
+    
+  }
+} 
+
+a {
+    
+    
+    font-family: inherit;
+    font-weight: 100;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-property: color;
+    transition-property: color;
+  }
+  
+  a:focus,
+  a:hover {
+    color: #050505;
+  }
+  
+  a:focus:after,
+  a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #D5AD56;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+    -webkit-transition-property: width, left;
+    transition-property: width, left;
+  }
+  .sfondo{
+    background: rgba( 213, 173, 86, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  
+
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #000;
+    background-color: #e9ecef00;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #000;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-link:hover, .nav-link:focus {
+  color: #000;
+}
+.imgCustom{
+  width: 400px;
+  height: 400px;
+}
+
+.borderCustom{
+  border: 1px solid #D5AD56;
+}
+  
+  
